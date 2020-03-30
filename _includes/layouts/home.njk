@@ -18,7 +18,7 @@ section: home
 </div>
 {% for item in collections.homePageBanners %}
 <div
-  class="flex md:flex-row{% if item.data.imagePlacement === 'right' %}-reverse{% endif %} flex-wrap justify-start w-full mb-6"
+  class="flex flex-row{% if item.data.imagePlacement === 'right' %}-reverse{% endif %} flex-wrap justify-start w-full mb-6"
 >
   <img
     data-src="{{ item.data.image }}"
