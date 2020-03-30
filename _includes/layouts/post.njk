@@ -1,0 +1,55 @@
+---
+layout: layouts/base.njk
+section: post
+---
+
+<article class="container max-w-screen-lg mx-auto ">
+  <div class="bg-gray-200 -mt-8 p-8 container max-w-screen-md ">
+    <p class="font-semibold font-serif">
+      <time datetime="{{ post.date | machineDate }}">
+        <small>{{ date | readableDate }}</small>
+      </time>
+    </p>
+    <h1 class="text-2xl leading-tight mb-2">{{ title }}</h1>
+
+    <div class="markdown mb-4">
+      {{ layoutContent | safe }}
+    </div>
+    <p class="text-xs text-gray-700">Share this post</p>
+    <div class="flex flex-row mb-4 text-xs">
+      <button
+        class="bg-gray-100 shadow p-2 rounded "
+        id="copyPostLink"
+        aria-label="Copy the link to this post to the clipboard"
+      >
+        <span class="iconify inline-block" data-icon="fa:copy"></span>
+      </button>
+      <input
+        class="form-input p-2 text-xs w-full"
+        type="text"
+        id="postLink"
+        value="{{ metadata.baseURL }}{{ page.url }}"
+        readonly
+      />
+    </div>
+    <hr class="border-b-2 border-gray-900 w-48 mb-4" />
+    {% if tags %}
+    <p class="mb-2">
+      <span class="text-xs text-gray-700">tags:</span> 
+      {% for tag in tags %} {%- if tag != "post" -%} {% set tagUrl %}/tags/{{
+        tag
+      }}/{% endset %}
+      <a
+        href="{{ tagUrl | url }}"
+        rel="tag"
+        class="text-gray-700 hover:text-gray-900"
+        ><small>{{ tag }}</small></a
+      >
+      {%- endif -%} {% endfor %}
+    </p>
+    {% endif %}
+    <nav>
+      <a href="{{ '/blog/' | url }}" class="hover:text-red-400">← Blog index</a>
+    </nav>
+  </div>
+</article>

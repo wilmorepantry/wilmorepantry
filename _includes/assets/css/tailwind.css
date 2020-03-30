@@ -1,0 +1,85 @@
+/* purgecss start ignore */
+@tailwind base;
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url("/static/img/kate-remmer-RZn4_FzNUCY-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.animated {
+  animation-duration: 500ms;
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+  animation-timing-function: linear;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.markdown * {
+  @apply leading-relaxed;
+}
+
+.markdown a {
+  @apply underline;
+}
+
+.markdown blockquote {
+  @apply pl-2 opacity-50 border-gray-900 border-l-4 leading-tight;
+}
+
+.markdown a:hover {
+  @apply text-red-400;
+}
+
+.markdown p {
+  @apply mb-2 font-serif;
+}
+
+.markdown p + h1,
+.markdown p + h2,
+.markdown p + h3,
+.markdown p + h4,
+.markdown p + h5,
+.markdown p + h6 {
+  @apply mt-6 mb-2;
+}
+
+.markdown h1 {
+  @apply text-4xl leading-none mb-4;
+}
+
+.markdown h2 {
+  @apply text-2xl font-semibold leading-none mb-4;
+}
+
+.markdown h3 {
+  @apply text-xl font-semibold leading-none mb-4;
+}
+
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  @apply font-semibold leading-none mb-4;
+}
+
+.markdown img {
+  @apply object-cover mx-auto mb-2;
+}
+
+@tailwind components;
+/* purgecss end ignore */
+
+@tailwind utilities;

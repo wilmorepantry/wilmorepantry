@@ -1,0 +1,45 @@
+---
+layout: layouts/base.njk
+section: home
+---
+
+<div class="min-h-screen flex md:flex-row flex-wrap justify-start w-full mb-6">
+  <div class="p-8 w-full md:w-1/2 animateWhenVisible">
+    <div class="markdown ">
+      {{ content | safe }}
+    </div>
+    {% Button { href: "/contact/", text: "CONTACT US" } %} {% Button { href:
+    "/#mutual-aid", text: "WHAT IS MUTUAL AID?", color: "gray-400" } %}
+  </div>
+  <img
+    src="/static/img/hello-i-m-nik-KTEP8WKabgU-unsplash.jpg"
+    class="m-6 md:w-2/5 object-cover rounded-lg shadow flex-grow"
+  />
+</div>
+{% for item in collections.homePageBanners %}
+<div
+  class="flex flex-row md:flex-row{% if item.data.imagePlacement === 'right' %}-reverse{% endif %} flex-wrap justify-start w-full mb-6"
+>
+  <img
+    data-src="{{ item.data.image }}"
+    alt=""
+    class="m-6 md:w-2/5 object-cover rounded-lg shadow lazy-load flex-grow"
+  />
+  <div
+    class="flex flex-col justify-center p-8 w-full md:w-1/2 markdown animateWhenVisible"
+  >
+    <h2>{{ item.data.title }}</h2>
+    {{ item.templateContent | safe }}
+  </div>
+</div>
+{% endfor %}
+<div
+  class="w-full text-2xl text-center text-gray-200 hero-image min-h-screen flex flex-col justify-center items-center"
+>
+  <div class="container max-w-screen-md">
+    <h2 class="text-4xl leading-none font-bold mb-4">
+      {{ callToAction.header }}
+    </h2>
+    <p class="text-lg">{{ callToAction.content | safe }}</p>
+  </div>
+</div>

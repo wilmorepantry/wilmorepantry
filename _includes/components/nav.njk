@@ -1,0 +1,10 @@
+<nav>
+  {% set navPages = collections.all | eleventyNavigation %}
+  <ul class="flex flex-row flex-wrap">
+  {%- for entry in navPages %}
+    <li>
+      <a href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %} class="py-2 pl-0 pr-4 font-bold md:text-xl hover:text-blue-700 appearance-none focus:shadow-outline">{{ entry.title }}</a>
+    </li>
+  {%- endfor %}
+  </ul>
+</nav>
