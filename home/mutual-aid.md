@@ -6,6 +6,8 @@ imagePlacement: left
 order: 0
 ---
 
-Washoe County Mutual Aid Solidarity Network is an all-volunteer grassroots network operating in Washoe County, Nevada, connecting with multiple coalition partners throughout the region.
+The practice of mutual aid has been a deep part of human society and social relationships for ages. As social beings, humans naturally come together to form networks of care and reciprocity that sustain us through times of crises.
 
-Washoe County has the opportunity to come together as neighbors and friends to help care for those of us most vulnerable to the economic disruption and health dangers of COVID-19: people facing homelessness, the elderly, the young, the immunocompromised, the poor, and others who are unable to restock the basic supplies they and their families need. [Read more...](https://tmjbgc.org/posts/washoe-county-mutual-aid-solidarity-network/)
+Mutual aid isn't charity though &mdash; it's a recognition that each and everyone of us participate in the shaping of our world and relationships.
+
+Mutual aid is a rejection of the idea that _some of us_ survive at the cost of others, and an embrace of our own interconnectivity.
