@@ -1,4 +1,18 @@
 {
   "title": "Wilmore Neighborhood Pantry",
-  "baseURL": "https://wilmorepantrylb.org"
+  "baseURL": "https://wilmorepantrylb.org",
+  "navigation": [
+    {
+      "title": "Home",
+      "url": "/"
+    },
+    {
+      "title": "Donate",
+      "url": "/#donate"
+    },
+    {
+      "title": "Conact",
+      "url": "/#contact"
+    }
+  ]
 }
