@@ -602,6 +602,7 @@ video {
     url("/static/img/kate-remmer-RZn4_FzNUCY-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .animated {
@@ -645,7 +646,7 @@ video {
 }
 
 .markdown a {
-  text-decoration: underline;
+  color: #63b3ed;
 }
 
 .markdown blockquote {
@@ -657,7 +658,7 @@ video {
 }
 
 .markdown a:hover {
-  color: #fc8181;
+  color: #f6e05e;
 }
 
 .markdown p {
