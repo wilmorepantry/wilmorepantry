@@ -6,6 +6,7 @@
     url("/static/img/kate-remmer-RZn4_FzNUCY-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .animated {
