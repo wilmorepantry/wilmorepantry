@@ -5,7 +5,7 @@ section: home
 
 <div class="min-h-screen flex md:flex-row flex-wrap justify-start w-full mb-6">
   <div class="p-8 w-full md:w-1/2 animateWhenVisible">
-    <div class="markdown ">
+    <div class="markdown">
       {{ content | safe }}
     </div>
     {% Button { href: "/#contact", text: "CONTACT US", color: "yellow-400" } %}
@@ -19,7 +19,7 @@ section: home
 </div>
 {% for item in collections.homePageBanners %}
 <div
-  class="flex flex-row{% if item.data.imagePlacement === 'right' %}-reverse{% endif %} flex-wrap justify-start w-full "
+  class="flex flex-row{% if item.data.imagePlacement === 'right' %}-reverse{% endif %} flex-wrap justify-start w-full"
 >
   <img
     data-src="{{ item.data.image }}"
@@ -48,7 +48,7 @@ section: home
   </div>
 </div>
 <div
-  class="flex flex-row{% if item.data.imagePlacement === 'right' %}-reverse{% endif %} flex-wrap justify-start w-full "
+  class="flex flex-row{% if item.data.imagePlacement === 'right' %}-reverse{% endif %} flex-wrap justify-start w-full"
 >
   <div
     class="flex flex-col justify-center p-8 w-full md:w-1/2 markdown animateWhenVisible"
@@ -65,8 +65,8 @@ section: home
 
     <!--  -->
 
-    {%- SocialIcon "twitter", "https://twitter.com/wilmorepantry"
-    -%}@wilmorepantry{%- endSocialIcon -%}
+    {%- SocialIcon "dollar", "https://cash.app/$wilmorepantry" -%}Support us{%-
+    endSocialIcon -%}
 
     <!--  -->
 
