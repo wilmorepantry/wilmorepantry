@@ -10,10 +10,10 @@ eleventyNavigation:
 callToAction:
   header: Let's care for each other
   content: >-
-    Politicians, governments, and a system designed to extract the most out of working people for the least in return have led us into disaster on a global scale. It's up to us to take care of one another and build the networks of support with our neighbors that will help us survive future disasters.
+    Politicians, governments, and a system designed to extract the most out of us for the least in return have lead us into disaster on a global scale. It's up to us to take care of one another and build the networks of support with our neighbors that will help us survive future disasters.
 ---
 
-# Free fresh meals & more in the Wilmore & Downtown area of Long Beach
+# Free fresh meals and more in the Wilmore and Downtown area of Long Beach
 
 We cook, share food with, and deliver groceries or run errands for our neighbors in need **for free, as we are able to.**
 
